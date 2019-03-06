@@ -10,11 +10,32 @@
 		body {
 			padding: 0px;
 		}
+
 		.list-icon {
 			font-size: 24px;
 		}
+
+		.parallax {
+			/* The image used */
+			background-image: url("https://i.redd.it/tkz2navwt0py.jpg");
+
+			/* Set a specific height */
+			height: 100%;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.img-pp {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	</style>
-	<meta name="description" content="Diego Lovera Viga - Test Page - Geralt of rivia the witcher."/>
+	<meta name="description" content="Diego Lovera Viga - Test Page - Geralt of rivia the witcher." />
 	<title>Diego Lovera</title>
 </head>
 
@@ -22,78 +43,84 @@
 	<p hidden>Diego Lovera Viga - Test Page - Geralt of rivia the witcher.</p>
 	<section class="hero is-dark">
 		<div class="hero-body">
-			<div class="columns">
-				<div class="column is-3">
-					<figure class="image is-1by1">
-						<img src="https://pbs.twimg.com/profile_images/603434927535878144/uw0OCNVv_400x400.jpg">
-					</figure>
-				</div>
-				<div class="column is-9">
-					<h1 class="title">Geralt Of Rivia</h1>
-					<h2 class="subtitle">Witcher</h2>
-					<div class="columns">
-						<div class="column">
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fas fa-home"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>Toussaint, Nilfgard</p>
-								</div>
-							</div>
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fab fa-fort-awesome"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>School of the Wolf</p>
-								</div>
-							</div>
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fas fa-bolt"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>Sword Master</p>
-								</div>
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column is-narrow">
+						<div>
+							<figure class="image is-128x128 img-pp">
+								<img class="is-rounded"
+									src="https://pbs.twimg.com/profile_images/603434927535878144/uw0OCNVv_400x400.jpg">
+							</figure>
+							<div class="content is-medium" style="text-align: center">
+								<h1 class="title">Geralt Of Rivia</h1>
+								<h2 class="subtitle">Witcher</h2>
 							</div>
 						</div>
-						<div class="column">
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fab fa-twitter"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>@GeraltTheWitcher</p>
-								</div>
+					</div>
+					<div class="column">
+						
+					</div>
+					<div class="column is-narrow">
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fas fa-home"></i>
+								</span>
 							</div>
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fab fa-github"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>GeraltOfRivia</p>
-								</div>
+							<div class="column">
+								<p>Toussaint, Nilfgard</p>
 							</div>
-							<div class="columns is-mobile">
-								<div class="column is-1">
-									<span class="icon list-icon">
-										<i class="fas fa-envelope"></i>
-									</span>
-								</div>
-								<div class="column is-11">
-									<p>Geralt@witcher.com</p>
-								</div>
+						</div>
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fab fa-fort-awesome"></i>
+								</span>
+							</div>
+							<div class="column">
+								<p>School of the Wolf</p>
+							</div>
+						</div>
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fas fa-bolt"></i>
+								</span>
+							</div>
+							<div class="column">
+								<p>Sword Master</p>
+							</div>
+						</div>
+					</div>
+					<div class="column is-narrow">
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fab fa-twitter"></i>
+								</span>
+							</div>
+							<div class="column">
+								<p>@GeraltTheWitcher</p>
+							</div>
+						</div>
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fab fa-github"></i>
+								</span>
+							</div>
+							<div class="column">
+								<p>GeraltOfRivia</p>
+							</div>
+						</div>
+						<div class="columns is-mobile">
+							<div class="column is-narrow">
+								<span class="icon list-icon">
+									<i class="fas fa-envelope"></i>
+								</span>
+							</div>
+							<div class="column">
+								<p>Geralt@witcher.com</p>
 							</div>
 						</div>
 					</div>
@@ -131,7 +158,45 @@
 				poisons, and an extreme resistance to pain.</p>
 		</div>
 	</section>
-	<section class="section" style="padding-top: 0">
+	<nav class="level" style="margin-bottom: 48px">
+		<div class="level-item has-text-centered">
+			<div>
+				<p class="heading">Tweets</p>
+				<p class="title">3,456</p>
+			</div>
+		</div>
+		<div class="level-item has-text-centered">
+			<div>
+				<p class="heading">Following</p>
+				<p class="title">123</p>
+			</div>
+		</div>
+		<div class="level-item has-text-centered">
+			<div>
+				<p class="heading">Followers</p>
+				<p class="title">456K</p>
+			</div>
+		</div>
+		<div class="level-item has-text-centered">
+			<div>
+				<p class="heading">Likes</p>
+				<p class="title">789</p>
+			</div>
+		</div>
+	</nav>
+	<section class="hero is-dark is-fullheight parallax">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Fullheight title
+				</h1>
+				<h2 class="subtitle">
+					Fullheight subtitle
+				</h2>
+			</div>
+		</div>
+	</section>
+	<section class="section" style="padding-bottom: 0px">
 		<div class="container">
 			<h1 class="title">Experience</h1>
 			<h2 class="subtitle">Butcher of Blabiken</h2>
@@ -152,10 +217,56 @@
 				indulgence and knightly ritual masks an ancient, bloody secret.</p>
 		</div>
 	</section>
+	<section class="section">
+		<div class="container">
+			<div class="content is-large">
+				<h2>Title</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<div class="content is-large">
+						<p>Travel to a land untainted by war: the Nilfgaardian region of Toussaint, where you will
+							unravel the horrifying secret behind a beast terrorizing the kingdom.</p>
+					</div>
+					<div class="tags">
+						<span class="tag">One</span>
+						<span class="tag">Two</span>
+						<span class="tag">Three</span>
+						<span class="tag">Four</span>
+						<span class="tag">Five</span>
+						<span class="tag">Six</span>
+						<span class="tag">Seven</span>
+						<span class="tag">Eight</span>
+						<span class="tag">Nine</span>
+						<span class="tag">Ten</span>
+						<span class="tag">Eleven</span>
+						<span class="tag">Twelve</span>
+						<span class="tag">Thirteen</span>
+						<span class="tag">Fourteen</span>
+						<span class="tag">Fifteen</span>
+						<span class="tag">Sixteen</span>
+						<span class="tag">Seventeen</span>
+						<span class="tag">Eighteen</span>
+						<span class="tag">Nineteen</span>
+						<span class="tag">Twenty</span>
+					</div>
+				</div>
+				<div class="column">
+					<progress class="progress" value="15" max="100"><label>Progress bar</label></progress>
+					<progress class="progress is-link" value="30" max="100">30%</progress>
+					<progress class="progress is-info" value="45" max="100">45%</progress>
+					<progress class="progress is-success" value="60" max="100">60%</progress>
+					<progress class="progress is-warning" value="75" max="100">75%</progress>
+					<progress class="progress is-danger" value="90" max="100">90%</progress>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer class="footer">
 		<div class="content">
 			<p>
-				<strong>Test</strong> by <a href="https://DiegoLovera.github.io">Diego Lovera</a>. The source code is licensed
+				<strong>Test</strong> by <a href="https://DiegoLovera.github.io">Diego Lovera</a>. The source code is
+				licensed
 				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
 				<a href="http://diegolovera.github.io/pixel-art.html">Pixel Art Version.</a>
 			</p>
