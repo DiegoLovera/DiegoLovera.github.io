@@ -7,17 +7,48 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" type="text/css">
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	<style>
+		/*
+		Color scheme:
+			Primary: #008577
+			PrimaryDark: #00574B
+			Accent: #D81B60
+			Secondary: #3558A6
+			SecondaryDark: #252C5E
+		*/
 		body {
-			padding: 0px;
+			padding: 0;
 		}
 
 		.list-icon {
 			font-size: 24px;
 		}
 
-		.parallax {
+		.top-background {
 			/* The image used */
-			background-image: url("https://i.redd.it/tkz2navwt0py.jpg");
+			background-image: url("assets/tokyo08.jpg");
+			/*background-image: linear-gradient(to bottom right, #008577, #3558A6);*/
+			/*background-color: #00574B;*/
+			/* Add the blur effect */
+			/*filter: blur(8px);
+			-webkit-filter: blur(8px);*/
+
+			/* Full height */
+			height: 100%;
+
+			/* Center and scale the image nicely */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.parallax {
+			/* https://bobandsuewilliams.com/images/witcher-art-1080p-2.png - http://cdn1.gamepur.com/images/feature/the-witcher-3-unreleased-concept-art-9.jpg*/
+			/* The image used - http://www.school298.spb.ru/images/700/DSC100799797.jpg - https://i.redd.it/tkz2navwt0py.jpg - */
+			background-image: url("assets/tokyo08.jpg");
+			/*background-image: url("https://www.xmple.com/wallpaper/gingham-lime-striped-turquoise-quad-cyan-1920x1080-c4-008577-1e2613-19d55b-30d791-l-195-a-195-f-15.svg");*/
+			/*background-color: #00574B;*/
+			/*background-image: linear-gradient(to bottom right, #008577, #00574B);*/
 
 			/* Set a specific height */
 			height: 100%;
@@ -45,10 +76,20 @@
 
 		.data-container {
 			text-align: center;
+			margin-right: 1rem;
+			margin-left: 1rem;
 		}
 
 		.data-item {
-			padding-bottom: 16px;
+			padding-bottom: 1rem;
+		}
+
+		.is-colored {
+			color: #008577 !important;
+		}
+
+		.is-white-text {
+			color: white !important;
 		}
 	</style>
 	<meta name="description" content="Diego Lovera Viga - Test Page - Geralt of rivia the witcher." />
@@ -58,9 +99,9 @@
 <body>
 	<p hidden>Diego Lovera Viga - Test Page - Geralt of rivia the witcher.</p>
 	<section class="hero is-dark">
-		<div class="hero-body">
+		<div class="hero-body top-background">
 			<div class="container">
-				<div class="columns is-vcentered">
+				<div class="columns is-vcentered is-gapless">
 					<div class="column is-narrow">
 						<div>
 							<figure class="image is-128x128 img-pp">
@@ -97,8 +138,8 @@
 						</div>
 					</div>
 					<div class="column is-narrow">
-						<div  class="data-container">
-								<div class="data-item">
+						<div class="data-container">
+							<div class="data-item">
 								<span class="icon list-icon">
 									<i class="fab fa-twitter"></i>
 								</span>
@@ -124,7 +165,7 @@
 	</section>
 	<section class="section">
 		<div class="container">
-			<h1 class="title">About Geralt</h1>
+			<h1 class="title is-colored">About Geralt</h1>
 			<h2 class="subtitle">Introduction</h2>
 			<p>Geralt of Rivia was a witcher, Ciri's adoptive father, and despite their tumultuous relationship, loved
 				the sorceress Yennefer, who was considered the love of his life.</p>
@@ -152,47 +193,49 @@
 				poisons, and an extreme resistance to pain.</p>
 		</div>
 	</section>
-	<nav class="level" style="margin-bottom: 48px">
-		<div class="level-item has-text-centered">
-			<div>
-				<p class="heading">Tweets</p>
-				<p class="title">3,456</p>
-			</div>
-		</div>
-		<div class="level-item has-text-centered">
-			<div>
-				<p class="heading">Following</p>
-				<p class="title">123</p>
-			</div>
-		</div>
-		<div class="level-item has-text-centered">
-			<div>
-				<p class="heading">Followers</p>
-				<p class="title">456K</p>
-			</div>
-		</div>
-		<div class="level-item has-text-centered">
-			<div>
-				<p class="heading">Likes</p>
-				<p class="title">789</p>
-			</div>
-		</div>
-	</nav>
-	<section class="hero is-dark is-fullheight parallax">
+	<section class="hero is-medium parallax">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title">
-					Fullheight title
-				</h1>
-				<h2 class="subtitle">
-					Fullheight subtitle
-				</h2>
+				<div style="text-align: center; margin-bottom: 48px;">
+					<h1 class="title is-white-text">
+						Statistics
+					</h1>
+					<h2 class="subtitle is-white-text">
+						Fullheight subtitle
+					</h2>
+				</div>
+				<nav class="level">
+					<div class="level-item has-text-centered">
+						<div>
+							<p class="heading is-white-text">Monsters killed</p>
+							<p class="title is-white-text">3,456</p>
+						</div>
+					</div>
+					<div class="level-item has-text-centered">
+						<div>
+							<p class="heading is-white-text">Cured princesses</p>
+							<p class="title is-white-text">123</p>
+						</div>
+					</div>
+					<div class="level-item has-text-centered">
+						<div>
+							<p class="heading is-white-text">Coin gained</p>
+							<p class="title is-white-text">456K</p>
+						</div>
+					</div>
+					<div class="level-item has-text-centered">
+						<div>
+							<p class="heading is-white-text">Whoresons killed</p>
+							<p class="title is-white-text">789</p>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</section>
 	<section class="section" style="padding-bottom: 0px">
 		<div class="container">
-			<h1 class="title">Experience</h1>
+			<h1 class="title is-colored">Experience</h1>
 			<h2 class="subtitle">Butcher of Blabiken</h2>
 			<p>He ran into the gang members who hadn't acted yet as Renfri had went to the tower alone to give the mage
 				the ultimatum first. Not wanting to take any chances of innocents being killed, Geralt and the gang
@@ -214,7 +257,7 @@
 	<section class="section">
 		<div class="container">
 			<div class="content is-large">
-				<h2>Title</h2>
+				<h1 class="title is-colored">Title</h2>
 			</div>
 			<div class="columns">
 				<div class="column">
@@ -246,7 +289,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<progress class="progress" value="15" max="100"><label>Progress bar</label></progress>
+					<progress class="progress" value="15" max="100" style="background-color:violet !important"></progress>
 					<progress class="progress is-link" value="30" max="100">30%</progress>
 					<progress class="progress is-info" value="45" max="100">45%</progress>
 					<progress class="progress is-success" value="60" max="100">60%</progress>
